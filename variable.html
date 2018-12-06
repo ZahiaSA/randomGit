@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        function entierAleatoire(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+        //Utilisation
+        //La variable contient un nombre aléatoire compris entre 1 et 1000
+        var entier = entierAleatoire(1, 1000);
+
+        document.write(entier);
+
+        let nb = Math.floor(Math.random() * 1000);
+        let compteur = 1;
+        while (nb != Math.floor(Math.random() * 1000)) {
+            compteur++;
+        }
+        document.write(" il a fallu " + compteur + " tirages<br> ");
+
+
+    </script>
+</body>
+
+</html>
